@@ -1,0 +1,21 @@
+idf_component_register(
+    SRCS
+        "gamebuino_main.cpp"
+	"codes/melody.cpp"
+        "lib/sdcard.c"
+        "lib/audio.c"
+        "lib/expander.c"
+        "lib/LCD.c"
+        "lib/graphics_basic.cpp"
+        "lib/audio_basic.cpp"
+        "Codes/game.cpp"
+        "Codes/menu.cpp"
+        "Codes/graphics.cpp"
+        "Codes/audio.cpp"
+	"Codes/melody.cpp"
+        "Codes/image_intro.cpp"  
+    INCLUDE_DIRS
+        "."
+        "lib"
+        "Codes"
+)
