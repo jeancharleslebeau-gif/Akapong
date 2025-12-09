@@ -32,11 +32,19 @@ extern "C" {
 #define ST7789V_CMD_CASET       0x2A
 #define ST7789V_CMD_RASET       0x2B
 
+extern uint16_t framebuffer[];
+
 void LCD_init();
 void LCD_FAST_test(const uint16_t* u16_pframe_buffer);
 uint32_t LCD_last_refresh_delay();
 
+void lcd_draw_char(uint16_t x, uint16_t y, char c);
+void lcd_draw_char_bg(uint16_t x, uint16_t y, char c, uint16_t bgColor);
 void lcd_draw_str( uint16_t x, uint16_t y, const char* pc );
+void lcd_draw_str_bg(uint16_t x, uint16_t y, const char* pc, uint16_t bgColor);
+void lcd_draw_text(uint16_t x, uint16_t y, const char* pc);
+
+
 void lcd_refresh();
 void lcd_clear( uint16_t u16_pix_color );
 void lcd_printf(const char *pc_format, ...);

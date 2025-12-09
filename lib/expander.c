@@ -8,6 +8,7 @@
 #include "esp_adc/adc_cali.h"
 #include "esp_adc/adc_cali_scheme.h"
 #include "TAS2505_rehs.h"
+#include "expander.h"
 
 static void delay(uint32_t u32_ms)
 {

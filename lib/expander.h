@@ -13,7 +13,7 @@ void expander_write(uint8_t u8_data);
     //! return 16b expander inputs ( keys, cf EXPANDER_KEY_xxx )
 uint16_t expander_read();
 void test_expander();
-int lcd_init_pwm();
+void lcd_init_pwm();
 void lcd_update_pwm(uint8_t u8_duty);
 
     // initialize 3 channels adc for battery and Joystick

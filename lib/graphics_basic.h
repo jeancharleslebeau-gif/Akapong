@@ -1,6 +1,6 @@
 #pragma once
 #include "stdint.h"
-#include "LCD.h"
+#include "lcd.h"
 
 class graphics_basic {
     public:
